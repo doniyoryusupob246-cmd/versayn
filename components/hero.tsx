@@ -157,25 +157,25 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.2, duration: 0.6 }}
-              className="absolute -top-40 -left-6 rounded-xl border border-border/40 bg-card/90 p-4 shadow-xl backdrop-blur-sm">
+              className="absolute -top-60 lg:-top-40 -left-6 rounded-xl border border-border/40 bg-card/90 p-4 shadow-xl backdrop-blur-sm">
               <div className="col-span-12 lg:col-span-5 relative h-[300px] lg:h-[200px] flex items-center justify-center">
-                <div className="absolute w-[120%] h-[100%] bg-primary/5 rounded-full -right-20 -top-20 blur-3xl"></div>
+                <div className="absolute w-[80%] h-[80%] bg-primary/5 rounded-full -right-20 -top-20 blur-3xl"></div>
                 <div className="relative w-full h-full flex items-center justify-center">
-                  <div className="absolute top-10 right-0 w-64 h-80 bg-zinc-200 dark:bg-zinc-800 rounded-xl floating-product rotate-6 overflow-hidden">
+                  <div className="absolute top-10 right-0 w-[200px] h-[250px] bg-zinc-200 dark:bg-zinc-800 rounded-xl floating-product rotate-6 overflow-hidden">
                     <img
                       className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
                       data-alt="Minimalist luxury packaging box design mockup"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5UWc5C1jogMCNHtbXS5Cn4efVwIYxHNgZaQe4yf242_Ytih4k6FhmKMiNigNZj0jGzU_UWwNJqklhHOqSAYFep7idpuj27PLLrq7kUl9T1rhMdUVglA1flJ9aAMlaoQOhoku2y-SG_9DldnVw5IzoYLnEvtW8yAU2SCiYpO36MpTJiC7u634Qlpgyo8wQIaJPcMymsSwbL6zzKkkwOzUhmoCxly648iJz3rXEFrWwUzLYPAwLaHFzWPsc0tJh7gN0TczHUFy2hoc"
                     />
                   </div>
-                  <div className="absolute bottom-10 left-0 w-56 h-72 bg-zinc-300 dark:bg-zinc-700 rounded-xl floating-product -rotate-12 overflow-hidden z-20">
+                  <div className="absolute bottom-10 left-0 w-[180px] h-[200px] bg-zinc-300 dark:bg-zinc-700 rounded-xl floating-product -rotate-12 overflow-hidden z-20">
                     <img
                       className="w-full h-full object-cover"
                       data-alt="High-end stationery and business card mockup"
                       src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxU8txv4HqO58ia40lpT2ndU2zF85rXDrz-GQEcO6ZpCULFCEK6DBtZsCAh7a-1c5uSCLFF79pvlN694qBYdOIG1YNW3NoCykrlfceW0RknGRErk1vgllgPGXJcHqUAz5ofF7JN8xPYiR9ijTs1tsYOYzQpzJPdIDn7Z2ly8CA8hyG4q6bllh--iM0rekz0Mra6_zAfLLWCB3cSREUSRBjp786-cQwziGeOFxW0sQvyy23izEdITw8qn8tfvbnGsYCAGYFDQy6v9o"
                     />
                   </div>
-                  <div className="absolute center w-72 h-96 bg-primary rounded-xl floating-product rotate-3 z-10 flex flex-col justify-end p-6">
+                  <div className="absolute center w-65 h-[300px] bg-primary rounded-xl floating-product rotate-3 z-10 flex flex-col justify-end p-6">
                     <p className="text-[#111813] font-black text-2xl uppercase leading-none">
                       The
                       <br />
@@ -186,10 +186,6 @@ export default function Hero() {
                   </div>
                 </div>
               </div>
-              <p className="font-display text-xs font-bold uppercase tracking-wider text-versayn-green">
-                100% Success Rate
-              </p>
-              <p className="mt-1 text-xs text-muted-foreground">5000+ projects delivered</p>
             </motion.div>
           </div>
         </motion.div>

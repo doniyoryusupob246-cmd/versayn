@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const footerLinks = {
   explore: [
@@ -24,12 +25,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="max-w-sm">
             <div className="flex items-center gap-2">
-              <div className="flex h-8 w-8 items-center justify-center rounded-md bg-versayn-green">
-                <span className="font-display text-sm font-bold text-versayn-dark">V</span>
-              </div>
-              <span className="font-display text-lg font-bold tracking-tight text-foreground">
-                VERSAYN
-              </span>
+              <Image src="/logo.svg" alt="" width={80} height={80} />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
               Креативное агентство и производственная компания, специализирующаяся на

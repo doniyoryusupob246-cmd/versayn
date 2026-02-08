@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
 
 const navLinks = [
   { label: 'Работа', href: '#cases' },
@@ -35,12 +36,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
         <a href="#" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-versayn-green">
-            <span className="font-display text-sm font-bold text-versayn-dark">V</span>
-          </div>
-          <span className="font-display text-lg font-bold tracking-tight text-foreground">
-            VERSAYN
-          </span>
+          <Image src="/logo.svg" alt="" width={80} height={80} />
         </a>
 
         {/* Desktop Links */}
