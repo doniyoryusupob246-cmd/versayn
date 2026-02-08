@@ -54,7 +54,7 @@ export default function WhyVersayn() {
               <h3 className="font-display text-4xl font-bold tracking-tight text-foreground/[0.08] transition-colors duration-500 group-hover:text-foreground/20 sm:text-5xl lg:text-6xl xl:text-7xl">
                 {row.word}
               </h3>
-              <p className="max-w-sm text-base leading-relaxed text-muted-foreground text-right">
+              <p className="max-w-sm text-base leading-relaxed text-muted-foreground text-left lg:text-right">
                 {row.description}
               </p>
             </motion.div>

@@ -17,7 +17,7 @@ export default function Page() {
       <Navbar />
       <Hero />
       <WhyVersayn />
-      <Cases />
+      {/* <Cases /> */}
       <Services />
       <Drops />
       <About />

@@ -156,16 +156,6 @@ export default function Services() {
                     />
                   </div>
                   {/* Green accent card */}
-                  <motion.div
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ delay: 0.4, duration: 0.5 }}
-                    className="absolute -bottom-6 -right-4 rounded-xl bg-versayn-green p-4 shadow-lg lg:-right-6">
-                    <p className="text-xs font-bold uppercase tracking-wider text-versayn-dark">
-                      Спецификация бумаги
-                    </p>
-                  </motion.div>
                 </div>
               )}
             </motion.div>
