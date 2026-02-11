@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import {
   ArrowRight,
   Scissors,
-  BookOpen,
   CreditCard,
   Package,
   Calendar,
@@ -17,11 +16,11 @@ import Image from 'next/image';
 const services = [
   {
     number: '01',
-    title: 'Флаеры',
+    title: 'Футболки',
     description:
       'Разрушая традиционную сетку, мы используем изображения большого размера и необычные текстуры. Наши листовки предназначены не для мусорного ведра, а для рамки. Яркие визуальные элементы в сочетании с высококачественной бумагой.',
     image:
-      'https://img.freepik.com/premium-psd/easily-customizable-blank-16x11-a4-letter-mockup-present-your-design-3d-render_433979-3956.jpg?semt=ais_hybrid&w=740&q=80',
+      '/service1.jpg',
     icon: Scissors,
   },
   {
@@ -30,7 +29,7 @@ const services = [
     description:
       'Упаковка — это первое физическое взаимодействие с вашим брендом. Мы разрабатываем коробки, которые обеспечивают впечатления от распаковки, сравнимые с роскошным гала-вечером.',
     image:
-      'https://goodmockups.com/wp-content/uploads/2021/02/Free-Delivery-Shipping-Box-Mockup-PSD.jpg',
+      '/service2.jpg',
     icon: Package,
   },
   {
@@ -119,9 +118,8 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-80px' }}
               transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className={`flex flex-col items-center gap-12 lg:gap-20 ${
-                idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
-              }`}>
+              className={`flex flex-col items-center gap-12 lg:gap-20 ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'
+                }`}>
               {/* Text */}
               <div className="flex-1">
                 <span className="font-display text-6xl font-bold text-versayn-dark/[0.06] lg:text-8xl">

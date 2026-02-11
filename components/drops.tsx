@@ -4,21 +4,20 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Image from 'next/image';
 
-const tabs = ['Полиграфия', 'Аксессуары'];
+const tabs = ['Аксессуары', 'Полиграфия'];
 
 const products = [
   {
     title: 'Футболка',
     spec: '320GSM Single Jersey / Screen Printed',
-    image: 'https://hazken.com/assets/images/bg/tshirts-print.jpg',
+    image: '/service1.jpg',
     label: 'NEW DROP',
     category: 'Аксессуары',
   },
   {
-    title: 'Бокал',
+    title: 'Корпоративные подарки',
     spec: 'Technical Embroidery',
-    image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqPq3l6HiZKEdU9KWvBXPScQ1Xewe-MYI37A&s',
+    image: '/service2.jpg',
     label: 'IN STOCK',
     category: 'Аксессуары',
   },
@@ -46,17 +45,16 @@ const products = [
     category: 'Полиграфия',
   },
   {
-    title: 'Флаг бренда',
+    title: 'Бокал',
     spec: 'High-Quality Textile / Custom Print',
-    image:
-      'https://thumbs.dreamstime.com/b/d-реалистический-национальный-флаг-узбекистана-изолированный-от-291965038.jpg',
+    image: '/service3.jpg',
     label: null,
     category: 'Аксессуары',
   },
 ];
 
 export default function Drops() {
-  const [activeTab, setActiveTab] = useState('Полиграфия');
+  const [activeTab, setActiveTab] = useState('Аксессуары');
 
   const filtered = activeTab ? products.filter((p) => p.category === activeTab) : 'Полиграфия';
 
@@ -106,11 +104,10 @@ export default function Drops() {
               key={tab}
               type="button"
               onClick={() => setActiveTab(tab)}
-              className={`rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
-                activeTab === tab
-                  ? 'border-versayn-green bg-versayn-green text-versayn-dark'
-                  : 'border-border/40 text-muted-foreground hover:border-versayn-green/40 hover:text-foreground'
-              }`}>
+              className={`rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${activeTab === tab
+                ? 'border-versayn-green bg-versayn-green text-versayn-dark'
+                : 'border-border/40 text-muted-foreground hover:border-versayn-green/40 hover:text-foreground'
+                }`}>
               {tab}
             </button>
           ))}
