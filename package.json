@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --webpack",
+    "dev:turbo": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "validate": "npm run lint && npm run typecheck && npm run build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",
@@ -63,10 +66,11 @@
     "zod": "^3.24.1"
   },
   "devDependencies": {
-    "@tailwindcss/postcss": "^4.1.13",
     "@types/node": "^22",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^16.1.6",
     "postcss": "^8.5",
     "tailwindcss": "^3.4.17",
     "typescript": "5.7.3"

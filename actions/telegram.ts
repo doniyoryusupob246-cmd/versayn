@@ -1,8 +1,5 @@
 'use server';
 
-const TELEGRAM_BOT_TOKEN = '7990261848:AAFeSlRrYzvBV8sztvlBYFE30Sj1kLuc-Nc';
-const TELEGRAM_CHAT_ID = '696151337';
-
 interface ContactFormData {
     name: string;
     phone: string;
@@ -11,6 +8,13 @@ interface ContactFormData {
 }
 
 export async function sendTelegramMessage(data: ContactFormData) {
+    const token = process.env.TELEGRAM_BOT_TOKEN;
+    const chatId = process.env.TELEGRAM_CHAT_ID;
+    if (!token || !chatId) {
+        console.warn('Telegram: TELEGRAM_BOT_TOKEN or TELEGRAM_CHAT_ID not set');
+        return { success: false, error: 'Server configuration error' };
+    }
+
     const text = `
 🛒 *Новая заявка с сайта!*
 
@@ -24,14 +28,14 @@ ${data.message}
 
     try {
         const response = await fetch(
-            `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
+            `https://api.telegram.org/bot${token}/sendMessage`,
             {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({
-                    chat_id: TELEGRAM_CHAT_ID,
+                    chat_id: chatId,
                     text: text,
                     parse_mode: 'Markdown',
                 }),
