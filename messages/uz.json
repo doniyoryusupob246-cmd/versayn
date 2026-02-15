@@ -1,0 +1,344 @@
+{
+  "Navbar": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "cases": "Keyslar",
+    "about": "Biz haqimizda",
+    "contacts": "Aloqa",
+    "cta": "Loyiha muhokamasi"
+  },
+  "Hero": {
+    "slides": {
+      "1": {
+        "tag": "Kreativ prodyuserlik",
+        "headline": {
+          "line1": "Biz brendingiz",
+          "line2": "haqida so'zlovchi",
+          "line3": "",
+          "highlight": "merch yaratamiz."
+        },
+        "description": "Eng yaxshi korporativ sovg'alar va suvenir mahsulotlari. Individual ishlab chiqarish, ilg'or texnologiyalar va o'z ekspertlar jamoasi.",
+        "cta": "Loyihani boshlash"
+      },
+      "2": {
+        "tag": "Korporativ uslub",
+        "headline": {
+          "line1": "O'z brendingizni",
+          "line2": "faxr bilan",
+          "line3": "",
+          "highlight": "kiyib yuring."
+        },
+        "description": "Premium tekstil va brending. Xodimlaringiz mamnuniyat va faxr bilan kiyadigan kiyimlar.",
+        "cta": "Katalogni ko'rish"
+      },
+      "3": {
+        "tag": "Tafsilotlar muhim",
+        "headline": {
+          "line1": "Mijozlar",
+          "line2": "xotirasida qoladigan",
+          "line3": "",
+          "highlight": "tafsilotlar."
+        },
+        "description": "Eksklyuziv poligrafiya va kanselyariya. Biznesingiz haqida katta taassurot qoldiradigan kichik narsalar.",
+        "cta": "Namuna buyurtma qilish"
+      },
+      "4": {
+        "tag": "Kompleks yechimlar",
+        "headline": {
+          "line1": "Xodimlarni brend",
+          "line2": "elchilariga",
+          "line3": "",
+          "highlight": "aylantiring."
+        },
+        "description": "Yangi xodimlar va hamkorlar uchun tayyor welcome-pack to'plamlari. Birinchi kundanoq kuchli korporativ madaniyat yarating.",
+        "cta": "Vazifani muhokama qilish"
+      }
+    },
+    "casesLink": "Bizning ishlarimiz"
+  },
+  "WhyVersayn": {
+    "label": "Nega Versayn",
+    "items": {
+      "fast": {
+        "word": "TEZKOR",
+        "description": "Yuqori tezlikdagi chop etish"
+      },
+      "precise": {
+        "word": "ANIQ",
+        "description": "Har bir detalda yuqori standartlar."
+      },
+      "creative": {
+        "word": "IJODIY",
+        "description": "Aynan siz uchun yaratilgan, mukofotlarga sazovor dizayn."
+      },
+      "reliable": {
+        "word": "ISHONCHLI",
+        "description": "Siz ishonishingiz mumkin bo'lgan barqaror natijalar."
+      }
+    }
+  },
+  "Cases": {
+    "label": "Bizning ishlar",
+    "viewAll": "Barcha loyihalarni ko'rish",
+    "items": {
+      "1": {
+        "title": "Portfolio 1",
+        "category": "Brend aydentikasi"
+      },
+      "2": {
+        "title": "Portfolio 2",
+        "category": "Qadoqlash dizayni"
+      },
+      "3": {
+        "title": "Portfolio 3",
+        "category": "Chop etish va brending"
+      },
+      "4": {
+        "title": "Portfolio 4",
+        "category": "Tahririyat dizayni"
+      }
+    }
+  },
+  "Services": {
+    "label": "Bizning xizmatlar",
+    "title": "Biz nima yaratamiz.",
+    "cta": "Narxni so'rash",
+    "items": {
+      "1": {
+        "title": "Futbolkalar",
+        "description": "Kompaniyangiz tanilishiga xizmat qiladigan brendlangan futbolkalar yaratamiz. Sifatli materiallar, aniq chop etish va o'ylangan dizayn oddiy merchni kuchli marketing vositasiga aylantiradi. Xodimlar, tadbirlar, promo-kampaniyalar va korporativ sovg'alar uchun juda mos."
+      },
+      "2": {
+        "title": "Korporativ sovg'a to'plamlari",
+        "description": "Kompaniyangiz imijini kuchaytiradigan va brendni esda qolarli qiladigan, detallarigacha o'ylangan sovg'a yechimlari. Biz kontseptsiyadan tortib mukammal ijrogacha — berish yoqimli va olish undan ham yoqimli bo'lgan to'plamlarni yaratamiz."
+      }
+    }
+  },
+  "Drops": {
+    "marquee": "VERSAYN • MERCH • PRINT • BRANDING • ",
+    "label": "Bizning xizmatlar",
+    "titleLine1": "Firma",
+    "titleLine2": "Mahsulotlar matritsasi.",
+    "tabs": {
+      "accessories": "Aksessuarlar",
+      "polygraphy": "Poligrafiya"
+    },
+    "detailsButton": "Batafsil",
+    "products": {
+      "tshirt": {
+        "title": "Futbolka",
+        "spec": "Yuqori sifatli paxta / Logotip tushirish"
+      },
+      "sweatshirt": {
+        "title": "Svitshotlar",
+        "spec": "Qalin mato / Kashta yoki bosma"
+      },
+      "vest": {
+        "title": "Jiletlar",
+        "spec": "Issiqlik saqlovchi modellar / Brendlash"
+      },
+      "cap": {
+        "title": "Kepkalar",
+        "spec": "Sifatli material / Mashina kashtasi"
+      },
+      "gifts": {
+        "title": "Korporativ sovg'alar",
+        "spec": "Texnik kashta"
+      },
+      "notebooks": {
+        "title": "Charm bloknotlar",
+        "spec": "Yumshoq muqova / Logotip bo'rtma"
+      },
+      "menu": {
+        "title": "Charm menyular",
+        "spec": "Tabiiy yoki eko-charm / Issiq bo'rtma"
+      },
+      "pens": {
+        "title": "Ruchkalar",
+        "spec": "Metall va plastik / Lazerli gravirovka"
+      },
+      "frames": {
+        "title": "Ramkalar",
+        "spec": "Texnik kashta"
+      },
+      "statues": {
+        "title": "Mukofot haykalchalari",
+        "spec": "Shisha, metall yoki akril / Gravirovka"
+      },
+      "cards": {
+        "title": "Taklifnomalar",
+        "spec": "Dizayner qog'ozi / Folgalash"
+      },
+      "thermos": {
+        "title": "Termoslar",
+        "spec": "Zanglamaydigan po'lat / Logotip tushirish"
+      },
+      "badges": {
+        "title": "Znachoklar",
+        "spec": "Metall yoki emal / Qistirgich yoki to'g'nog'ich"
+      },
+      "folders": {
+        "title": "Korporativ papkalar",
+        "spec": "Mat yoki soft-touch laminatsiya / Tanlangan lak"
+      },
+      "flags": {
+        "title": "Stol bayroqlari",
+        "spec": "Atlas mato / To'liq rangli bosma"
+      },
+      "glass": {
+        "title": "Bokal",
+        "spec": "Yuqori sifatli tekstil / Individual bosma"
+      },
+      "flyer": {
+        "title": "Flayer",
+        "spec": "Reklama va aksiyalar uchun samarali vosita"
+      },
+      "businessCard": {
+        "title": "Vizitka",
+        "spec": "Biznesingizning zamonaviy taqdimoti"
+      },
+      "catalog": {
+        "title": "Katalog",
+        "spec": "Mahsulot va xizmatlaringizning taqdimotbop namoyishi"
+      },
+      "booklet": {
+        "title": "Buklet",
+        "spec": "Kompaniya haqida asosiy ma'lumotlarning ixcham taqdimoti"
+      },
+      "doorhanger": {
+        "title": "Doorhanger",
+        "spec": "To'g'ridan-to'g'ri mijoz eshigi oldidagi reklama"
+      },
+      "file": {
+        "title": "Fayl",
+        "spec": "Hujjatlarni tartibli saqlash va taqdim etish"
+      },
+      "calendar": {
+        "title": "Kalendar",
+        "spec": "Yil davomida ishlaydigan brendlangan taqvim"
+      },
+      "leaflet": {
+        "title": "Liflet",
+        "spec": "Qisqa va yorqin ma'lumot uchun ideal format"
+      },
+      "polyMenu": {
+        "title": "Menyu",
+        "spec": "Tafsilotlarni qadrlaydigan muassasalar uchun zamonaviy menyu"
+      },
+      "bag": {
+        "title": "Paket",
+        "spec": "Reklama effektiga ega amaliy qadoq"
+      }
+    }
+  },
+  "About": {
+    "titleLine1": "10+ yildan ortiq",
+    "titleLine2": "g'oyalarni haqiqatga",
+    "titleLine3": "aylantiramiz.",
+    "stats": {
+      "projects": "Amalga oshirilgan loyihalar",
+      "clients": "Mamnun mijozlar",
+      "cycles": "Ishlab chiqarish tsikllari"
+    },
+    "label": "Evolyutsiya agentligi",
+    "description1": "Zamonaviy bosmaxonadan to'liq dizayn-ishlab chiqarish kompaniyasigacha — VERSAYN brendlarni kuchaytiradigan va ularning tanilishini oshiradigan yechimlarni yaratadi.",
+    "description2": "Biz korporativ sovg'alar, merch va suvenir mahsulotlarini ishlab chiqish va ishlab chiqarishga ixtisoslashganmiz, kompaniyalarga kuchli va esda qolarli obraz yaratishda yordam beramiz. Har bir mahsulot — shunchaki buyum emas, balki mijozlar va hamkorlar bilan ishonch, sodiqlik va uzoq muddatli munosabatlarga xizmat qiladigan marketing vositasidir.",
+    "description3": "Yuqori estetika, ilg'or texnologiyalar va ekspert yondashuvni birlashtirgan holda, biz loyihalarni barcha bosqichlarda — g'oya va dizayndan to ishlab chiqarish va tayyor natijagacha hamrohlik qilamiz. Bizning vazifamiz — brendingiz haqida gapirishlari, uni tanishlari va tanlashlariga erishishdir.",
+    "description4": "VERSAYN — e'tiborni brend qiymatiga aylantiradigan korporativ sovg'alar."
+  },
+  "VersaynEdge": {
+    "title": "Versayn ustunligi",
+    "items": {
+      "design": {
+        "title": "Brendingiz uchun dizayn ishlab chiqish",
+        "description": "Kompaniyangizni ajratib turadigan va mijozlarni jalb qiladigan zamonaviy va esda qolarli dizayn yaratamiz."
+      },
+      "print": {
+        "title": "Professional chop etish",
+        "description": "Mahsulotingiz aniq, yorqin va premium ko'rinishi uchun zamonaviy uskunalardan foydalanamiz."
+      },
+      "branding": {
+        "title": "Brendlangan mahsulotlar",
+        "description": "Brendingiz tanilishini kuchaytiradigan korporativ sovg'alar, merch va reklama materiallarini ishlab chiqaramiz."
+      },
+      "launch": {
+        "title": "Brendni to'liq ishga tushirish",
+        "description": "Kuchli brend yaratishda yordam beramiz — firma uslubidan to tayyor reklama mahsulotlarigacha."
+      }
+    }
+  },
+  "Clients": {
+    "label": "Bizga ishonishadi"
+  },
+  "Testimonials": {
+    "label": "Sharhlar",
+    "items": {
+      "1": {
+        "quote": "VERSAYN brendimiz aydentikasini butunlay o'zgartirdi. Ularning chop etish sifati tengsiz — har bir detal aniqlik va g'amxo'rlik bilan bajarilgan.",
+        "author": "Sara Chen",
+        "role": "Kreativ direktor, TechBridge"
+      },
+      "2": {
+        "quote": "G'oyadan yetkazib berishgacha VERSAYN jamoasi barcha kutganlarimizdan oshib tushdi. Mahsulotimiz qadoqlanishi endi mahsulotning o'zi kabi ko'plab maqtovlarga sazovor bo'lmoqda.",
+        "author": "Markus Rodriges",
+        "role": "Asoschi, Luxe Botanics"
+      },
+      "3": {
+        "quote": "VERSAYN bilan ishlash o'zimizning ichki kreativ agentligimiz borligidek tuyuldi. Ular bizning qarashlarimizni tushunishdi va haqiqatan ham brendimizni ifodalovchi materiallarni taqdim etishdi.",
+        "author": "Aisha Patel",
+        "role": "Marketing rahbari, NovaTech"
+      }
+    }
+  },
+  "Contact": {
+    "headline": {
+      "line1": "Bizga ishonch",
+      "line2": "bildirishadi,",
+      "line3": "va",
+      "line4": "biz birgamiz."
+    },
+    "address": "Toshkent shahri, Mirobod tumani, “Tong Yulduzi” mahalla fuqarolar yig‘ini",
+    "form": {
+      "namePlaceholder": "Ismingiz",
+      "emailPlaceholder": "Emailingiz",
+      "phonePlaceholder": "Telefon raqamingiz",
+      "messagePlaceholder": "Loyihangiz haqida aytib bering",
+      "submitButton": "Yuborish",
+      "sendingButton": "Yuborilmoqda...",
+      "successMessage": "Ariza muvaffaqiyatli yuborildi!",
+      "errorMessage": "Arizani yuborishda xatolik yuz berdi. Qayta urinib ko'ring.",
+      "validation": {
+        "nameMin": "Ism kamida 2 ta belgidan iborat bo'lishi kerak",
+        "phoneMin": "To'g'ri telefon raqamini kiriting",
+        "messageMin": "Xabar kamida 10 ta belgidan iborat bo'lishi kerak"
+      }
+    }
+  },
+  "Footer": {
+    "description": "Yuqori sifatli chop etish va brendingga ixtisoslashgan kreativ agentlik va ishlab chiqarish kompaniyasi. Raqamli davrning qoq markazida joylashgan.",
+    "exploreLabel": "O'rganish",
+    "socialLabel": "Ijtimoiy tarmoqlar",
+    "contactButton": "Biz bilan bog'laning",
+    "locationButton": "Manzil",
+    "rights": "2026 VERSAYN. Barcha huquqlar himoyalangan.",
+    "madeFor": "Kelajak uchun ishlab chiqilgan"
+  },
+  "ContactModal": {
+    "title": "Ariza qoldirish",
+    "description": "Formani to'ldiring va biz {productName} bo'yicha siz bilan bog'lanamiz.",
+    "nameLabel": "Ism",
+    "phoneLabel": "Telefon raqam",
+    "messageLabel": "Xabar",
+    "messagePlaceholder": "Xabaringiz...",
+    "submitButton": "Yuborish",
+    "sendingButton": "Yuborilmoqda..."
+  },
+  "LanguageSwitcher": {
+    "ru": "RU",
+    "uz": "UZ"
+  },
+  "Metadata": {
+    "title": "VERSAYN — Reklama va Poligrafiya",
+    "description": "Premium darajadagi chop etish, tashqi reklama va brendlangan mahsulotlar. Biz shunchaki chop etmaymiz — biz brendlarni quramiz."
+  }
+}

@@ -3,31 +3,34 @@
 import { motion } from 'framer-motion';
 import { Palette, Printer, Package, Rocket } from 'lucide-react';
 
-const capabilities = [
-  {
-    icon: Palette,
-    title: 'Стратегия дизайна',
-    description: 'Мы не просто перемещаем пиксели. Мы определяем, как ваш бренд обращается к миру.',
-  },
-  {
-    icon: Printer,
-    title: 'Мастер-принт',
-    description:
-      'Современные технологии офсетной и цифровой печати обеспечивают четкие и яркие результаты.',
-  },
-  {
-    icon: Package,
-    title: 'Упаковочный центр',
-    description: 'От создания первого прототипа до массового производства коробок премиум-класса.',
-  },
-  {
-    icon: Rocket,
-    title: 'Запуск бренда',
-    description: 'Полное внедрение фирменной символики в печатных и цифровых экосистемах.',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function VersaynEdge() {
+  const t = useTranslations('VersaynEdge');
+
+  const capabilities = [
+    {
+      icon: Palette,
+      title: t('items.design.title'),
+      description: t('items.design.description'),
+    },
+    {
+      icon: Printer,
+      title: t('items.print.title'),
+      description: t('items.print.description'),
+    },
+    {
+      icon: Package,
+      title: t('items.branding.title'),
+      description: t('items.branding.description'),
+    },
+    {
+      icon: Rocket,
+      title: t('items.launch.title'),
+      description: t('items.launch.description'),
+    },
+  ];
+
   return (
     <section className="relative bg-versayn-dark py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -38,7 +41,7 @@ export default function VersaynEdge() {
           transition={{ duration: 0.6 }}
           className="mb-16">
           <h2 className="font-display text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Край Versayn
+            {t('title')}
           </h2>
         </motion.div>
 

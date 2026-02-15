@@ -2,26 +2,30 @@
 
 import { motion } from 'framer-motion';
 
-const rows = [
-  {
-    word: 'БЫСТРЫЙ',
-    description: 'Высокоскоростная доставка без компромиссов.',
-  },
-  {
-    word: 'ТОЧНЫЙ',
-    description: 'Высочайшие стандарты в каждой детали.',
-  },
-  {
-    word: 'ТВОРЧЕСКИЙ',
-    description: 'Отмеченный наградами дизайн, созданный специально для вас.',
-  },
-  {
-    word: 'НАДЕЖНЫЙ',
-    description: 'Стабильные результаты, на которые вы можете рассчитывать.',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function WhyVersayn() {
+  const t = useTranslations('WhyVersayn');
+
+  const rows = [
+    {
+      word: t('items.fast.word'),
+      description: t('items.fast.description'),
+    },
+    {
+      word: t('items.precise.word'),
+      description: t('items.precise.description'),
+    },
+    {
+      word: t('items.creative.word'),
+      description: t('items.creative.description'),
+    },
+    {
+      word: t('items.reliable.word'),
+      description: t('items.reliable.description'),
+    },
+  ];
+
   return (
     <section className="relative overflow-hidden bg-versayn-dark py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -33,7 +37,7 @@ export default function WhyVersayn() {
           transition={{ duration: 0.6 }}
           className="mb-20">
           <span className="inline-block rounded-full border border-versayn-green/20 bg-versayn-green/5 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-versayn-green">
-            Почему Versayn
+            {t('label')}
           </span>
         </motion.div>
 

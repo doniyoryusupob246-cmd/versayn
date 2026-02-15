@@ -4,28 +4,29 @@ import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
 
-const testimonials = [
-  {
-    quote:
-      "VERSAYN transformed our brand identity completely. The quality of their print work is unmatched — every detail was executed with precision and care.",
-    author: "Sarah Chen",
-    role: "Creative Director, TechBridge",
-  },
-  {
-    quote:
-      "From concept to delivery, the VERSAYN team exceeded every expectation. Our product packaging now gets as many compliments as the product itself.",
-    author: "Marcus Rodriguez",
-    role: "Founder, Luxe Botanics",
-  },
-  {
-    quote:
-      "Working with VERSAYN felt like having an in-house creative agency. They understood our vision and delivered materials that truly represent our brand.",
-    author: "Aisha Patel",
-    role: "Marketing Lead, NovaTech",
-  },
-]
+import { useTranslations } from 'next-intl';
 
 export default function Testimonials() {
+  const t = useTranslations('Testimonials');
+
+  const testimonials = [
+    {
+      quote: t('items.1.quote'),
+      author: t('items.1.author'),
+      role: t('items.1.role'),
+    },
+    {
+      quote: t('items.2.quote'),
+      author: t('items.2.author'),
+      role: t('items.2.role'),
+    },
+    {
+      quote: t('items.3.quote'),
+      author: t('items.3.author'),
+      role: t('items.3.role'),
+    },
+  ];
+
   const [current, setCurrent] = useState(0)
 
   const prev = () => setCurrent((c) => (c === 0 ? testimonials.length - 1 : c - 1))
@@ -46,7 +47,7 @@ export default function Testimonials() {
           transition={{ duration: 0.5 }}
           className="mb-8 inline-block text-xs font-semibold uppercase tracking-widest text-versayn-green"
         >
-          Testimonials
+          {t('label')}
         </motion.span>
 
         <div className="relative min-h-[240px]">
@@ -89,11 +90,10 @@ export default function Testimonials() {
                 key={i}
                 type="button"
                 onClick={() => setCurrent(i)}
-                className={`h-2 rounded-full transition-all duration-300 ${
-                  i === current
+                className={`h-2 rounded-full transition-all duration-300 ${i === current
                     ? "w-8 bg-versayn-green"
                     : "w-2 bg-muted-foreground/30"
-                }`}
+                  }`}
                 aria-label={`Go to testimonial ${i + 1}`}
               />
             ))}

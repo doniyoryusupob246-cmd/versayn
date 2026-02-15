@@ -24,6 +24,8 @@ export const viewport: Viewport = {
   themeColor: '#0B0F0D',
 };
 
+import { Toaster } from "@/components/ui/sonner"
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -32,6 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`font-sans antialiased ${_inter}`}>{children}</body>
+      <Toaster />
     </html>
   );
 }

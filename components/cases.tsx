@@ -4,34 +4,38 @@ import { motion } from 'framer-motion';
 import { ArrowUpRight, ArrowRight } from 'lucide-react';
 import Image from 'next/image';
 
-const cases = [
-  {
-    title: 'Portfolio 1',
-    category: 'Brand Identity',
-    image: '/images/case-1.jpg',
-    size: 'large',
-  },
-  {
-    title: 'Portfolio 2',
-    category: 'Packaging Design',
-    image: '/images/case-2.jpg',
-    size: 'large',
-  },
-  {
-    title: 'Portfolio 3',
-    category: 'Print & Branding',
-    image: '/images/case-3.jpg',
-    size: 'small',
-  },
-  {
-    title: 'Portfolio 4',
-    category: 'Editorial Design',
-    image: '/images/case-4.jpg',
-    size: 'small',
-  },
-];
+import { useTranslations } from 'next-intl';
 
 export default function Cases() {
+  const t = useTranslations('Cases');
+
+  const cases = [
+    {
+      title: t('items.1.title'),
+      category: t('items.1.category'),
+      image: '/images/case-1.jpg',
+      size: 'large',
+    },
+    {
+      title: t('items.2.title'),
+      category: t('items.2.category'),
+      image: '/images/case-2.jpg',
+      size: 'large',
+    },
+    {
+      title: t('items.3.title'),
+      category: t('items.3.category'),
+      image: '/images/case-3.jpg',
+      size: 'small',
+    },
+    {
+      title: t('items.4.title'),
+      category: t('items.4.category'),
+      image: '/images/case-4.jpg',
+      size: 'small',
+    },
+  ];
+
   return (
     <section id="cases" className="relative bg-versayn-dark py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -44,7 +48,7 @@ export default function Cases() {
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
               className="mb-4 inline-block text-xs font-semibold uppercase tracking-widest text-versayn-green">
-              Наша работа
+              {t('label')}
             </motion.span>
           </div>
           <motion.a
@@ -54,7 +58,7 @@ export default function Cases() {
             transition={{ duration: 0.5, delay: 0.2 }}
             href="#"
             className="group flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-foreground">
-            View all projects
+            {t('viewAll')}
             <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
           </motion.a>
         </div>
@@ -72,9 +76,8 @@ export default function Cases() {
                 delay: i * 0.1,
                 ease: [0.22, 1, 0.36, 1],
               }}
-              className={`group relative cursor-pointer overflow-hidden rounded-2xl border border-border/30 bg-card ${
-                item.size === 'large' ? 'aspect-[4/3]' : 'aspect-square'
-              }`}>
+              className={`group relative cursor-pointer overflow-hidden rounded-2xl border border-border/30 bg-card ${item.size === 'large' ? 'aspect-[4/3]' : 'aspect-square'
+                }`}>
               <Image
                 src={item.image || '/placeholder.svg'}
                 alt={item.title}

@@ -1,23 +1,30 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
-const footerLinks = {
-  explore: [
-    { label: 'Работа', href: '#cases' },
-    { label: 'Услуги', href: '#services' },
-    { label: 'О нас', href: '#about' },
-    { label: 'Контакты', href: '#contact' },
-  ],
-  social: [
-    { label: 'Instagram', href: '#' },
-    { label: 'LinkedIn', href: '#' },
-    { label: 'Behance', href: '#' },
-  ],
-};
+import { useTranslations } from 'next-intl';
 
 export default function Footer() {
+  const t = useTranslations('Footer');
+  const tNav = useTranslations('Navbar');
+
+  const footerLinks = {
+    explore: [
+      { label: tNav('cases'), href: '#cases' },
+      { label: tNav('services'), href: '#services' },
+      { label: tNav('about'), href: '#about' },
+      { label: tNav('contacts'), href: '#contact' },
+    ],
+    social: [
+      { label: 'Instagram', href: 'https://www.instagram.com/versayn.uz/' },
+      { label: 'Telegram', href: 'https://t.me/versayn_official' },
+      { label: 'Telegram 2', href: 'https://t.me/versayn_uz' },
+    ],
+  };
+
   return (
     <footer className="border-t border-border/20 bg-versayn-dark">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
@@ -28,8 +35,7 @@ export default function Footer() {
               <Image src="/logo.svg" alt="" width={80} height={80} />
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Креативное агентство и производственная компания, специализирующаяся на
-              высококачественной печати и брендинге. Расположена в самом сердце цифровой эпохи.
+              {t('description')}
             </p>
           </div>
 
@@ -37,7 +43,7 @@ export default function Footer() {
           <div className="flex gap-16">
             <div>
               <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-versayn-green">
-                Исследовать
+                {t('exploreLabel')}
               </h4>
               <ul className="space-y-3">
                 {footerLinks.explore.map((link) => (
@@ -53,7 +59,7 @@ export default function Footer() {
             </div>
             <div>
               <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-versayn-green">
-                Социальные сеть
+                {t('socialLabel')}
               </h4>
               <ul className="space-y-3">
                 {footerLinks.social.map((link) => (
@@ -71,29 +77,16 @@ export default function Footer() {
 
           {/* Newsletter */}
           <div className="max-w-xs">
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-widest text-versayn-green">
-              Информационная рассылка / Ранний доступ
-            </h4>
-            <form onSubmit={(e) => e.preventDefault()} className="flex">
-              <input
-                type="email"
-                placeholder="your@email.com"
-                className="flex-1 rounded-l-full border border-border/40 bg-transparent px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground focus:border-versayn-green/40 focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="flex items-center justify-center rounded-r-full bg-versayn-green px-4 text-versayn-dark transition-all duration-300 hover:bg-versayn-green/90"
-                aria-label="Subscribe">
-                <svg
-                  className="h-4 w-4"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
+            <Link href="tel:+998916444441">
+              <button className="flex items-center gap-2 rounded-full bg-versayn-green px-4 py-2.5 text-sm text-versayn-dark transition-all duration-300 hover:bg-versayn-green/90">
+                <Phone size={18} />{t('contactButton')}
               </button>
-            </form>
+            </Link>
+            <Link className='' href="https://yandex.uz/maps/10335/tashkent/?ll=69.296561%2C41.289730&mode=poi&poi%5Bpoint%5D=69.296673%2C41.289560&poi%5Buri%5D=ymapsbm1%3A%2F%2Forg%3Foid%3D16224549466&z=19">
+              <button className="mt-4 flex items-center gap-2 rounded-full bg-versayn-green px-4 py-2.5 text-sm text-versayn-dark transition-all duration-300 hover:bg-versayn-green/90">
+                <MapPin size={18} />{t('locationButton')}
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -104,8 +97,8 @@ export default function Footer() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
           className="mt-16 flex flex-col items-center justify-between gap-4 border-t border-border/20 pt-8 sm:flex-row">
-          <p className="text-xs text-muted-foreground">{'2024 VERSAYN. All rights reserved.'}</p>
-          <p className="text-xs text-muted-foreground/50">Разработано для будущего</p>
+          <p className="text-xs text-muted-foreground">{t('rights')}</p>
+          <p className="text-xs text-muted-foreground/50">{t('madeFor')}</p>
         </motion.div>
       </div>
     </footer>
