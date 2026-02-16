@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/routing';
 import LanguageSwitcher from './language-switcher';
+import Image from 'next/image';
 
 const navLinks = [
   { label: 'Работа', href: '#cases' },
@@ -31,9 +32,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-display text-2xl font-bold tracking-tight text-foreground">
-            VERSAYN
-          </span>
+          <Image src="/logo-nav.svg" alt="Logo" width={100} height={100} />
         </Link>
 
         {/* Desktop Menu */}

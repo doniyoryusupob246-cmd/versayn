@@ -18,7 +18,7 @@ export default function Page() {
             <Hero />
             <WhyVersayn />
             {/* <Cases /> */}
-            <Services />
+            {/* <Services /> */}
             <Drops />
             <About />
             <VersaynEdge />

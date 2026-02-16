@@ -27,7 +27,7 @@ export default function WhyVersayn() {
   ];
 
   return (
-    <section className="relative overflow-hidden bg-versayn-dark py-32 lg:py-40">
+    <section className="relative overflow-hidden bg-versayn-dark py-20">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section label */}
         <motion.div

@@ -209,7 +209,7 @@ export default function Drops() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-versayn-dark py-32 lg:py-40">
+    <section className="relative overflow-hidden bg-versayn-dark py-5 lg:py-40">
       {/* Marquee */}
       <div className="pointer-events-none absolute top-1/2 -translate-y-1/2 w-full overflow-hidden opacity-[0.03]">
         <div className="animate-marquee flex whitespace-nowrap">

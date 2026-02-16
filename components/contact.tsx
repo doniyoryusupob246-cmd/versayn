@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ArrowRight, Mail, MapPin } from 'lucide-react';
+import { ArrowRight, Mail, MapPin, Send as Telegram } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -24,6 +24,7 @@ const fieldVariants = {
 };
 
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -96,10 +97,10 @@ export default function Contact() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.3 }}
               className="mt-10 space-y-4">
-              <div className="flex items-center gap-3">
-                <Mail className="h-4 w-4 text-versayn-green" />
-                <span className="text-sm text-muted-foreground">hello@versayn.agency</span>
-              </div>
+              <Link href="https://t.me/versayn_official" className="flex items-center gap-3">
+                <Telegram className="h-4 w-4 text-versayn-green" />
+                <span className="text-sm text-versayn-green">Telegram</span>
+              </Link>
               <div className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-versayn-green" />
                 <span className="text-sm text-muted-foreground">

@@ -39,7 +39,7 @@
     --sidebar-border: 150 5% 18%;
     --sidebar-ring: 142 71% 45%;
 
-    --versayn-green: #00e061;
+    --versayn-green: red;
     --versayn-dark: #0b0f0d;
     --versayn-light: #f6f7f6;
   }
@@ -49,6 +49,7 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -73,6 +74,7 @@ body {
   0% {
     transform: translateX(0);
   }
+
   100% {
     transform: translateX(-50%);
   }
@@ -83,10 +85,12 @@ body {
 }
 
 @keyframes float {
+
   0%,
   100% {
     transform: translateY(0px);
   }
+
   50% {
     transform: translateY(-12px);
   }
@@ -97,10 +101,12 @@ body {
 }
 
 @keyframes glow-pulse {
+
   0%,
   100% {
     box-shadow: 0 0 20px rgba(0, 224, 97, 0.3);
   }
+
   50% {
     box-shadow: 0 0 40px rgba(0, 224, 97, 0.6);
   }

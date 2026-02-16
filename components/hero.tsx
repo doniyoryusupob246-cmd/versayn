@@ -159,7 +159,7 @@ export default function Hero() {
                   asChild
                   size="lg"
                   variant="outline"
-                  className="rounded-full border-white/10 px-8 font-display text-sm font-semibold text-white hover:bg-white/5 hover:border-white/20 transition-all duration-300 bg-transparent backdrop-blur-sm"
+                  className="rounded-full border-white/10 px-8 font-display text-sm font-semibold text-white hover:text-versayn-white hover:bg-white/5 hover:border-white/20 transition-all duration-300 bg-transparent backdrop-blur-sm"
                 >
                   <a href="#cases">{t('casesLink')} <ArrowRight className="ml-2 h-4 w-4" /></a>
                 </Button>
@@ -197,7 +197,7 @@ export default function Hero() {
           <div className="absolute bottom-4 right-4 lg:bottom-12 lg:right-12 z-20 flex flex-col items-end gap-6">
 
             {/* Counter */}
-            <div className="font-display font-medium text-4xl text-white/10">0{current + 1}</div>
+            {/* <div className="font-display font-medium text-4xl text-white/10">0{current + 1}</div> */}
 
             {/* Controls */}
             <div className="flex items-center gap-2">
