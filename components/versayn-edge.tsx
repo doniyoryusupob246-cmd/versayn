@@ -32,7 +32,7 @@ export default function VersaynEdge() {
   ];
 
   return (
-    <section className="relative bg-versayn-dark py-32 lg:py-40">
+    <section id="cases" className="relative bg-versayn-dark py-32 lg:py-40">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

@@ -1,8 +1,8 @@
-"use client"
+'use client';
 
-import { useState } from "react"
-import { motion, AnimatePresence } from "framer-motion"
-import { ChevronLeft, ChevronRight, Quote } from "lucide-react"
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight, Quote } from 'lucide-react';
 
 import { useTranslations } from 'next-intl';
 
@@ -27,13 +27,13 @@ export default function Testimonials() {
     },
   ];
 
-  const [current, setCurrent] = useState(0)
+  const [current, setCurrent] = useState(0);
 
-  const prev = () => setCurrent((c) => (c === 0 ? testimonials.length - 1 : c - 1))
-  const next = () => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1))
+  const prev = () => setCurrent((c) => (c === 0 ? testimonials.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === testimonials.length - 1 ? 0 : c + 1));
 
   return (
-    <section className="relative overflow-hidden bg-versayn-dark py-32 lg:py-40">
+    <section id="cases" className="relative overflow-hidden bg-versayn-dark py-32 lg:py-40">
       {/* Quote bg */}
       <div className="pointer-events-none absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
         <Quote className="h-64 w-64 text-foreground/[0.02] lg:h-96 lg:w-96" />
@@ -45,8 +45,7 @@ export default function Testimonials() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mb-8 inline-block text-xs font-semibold uppercase tracking-widest text-versayn-green"
-        >
+          className="mb-8 inline-block text-xs font-semibold uppercase tracking-widest text-versayn-green">
           {t('label')}
         </motion.span>
 
@@ -57,18 +56,13 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -30 }}
-              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
-            >
+              transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}>
               <p className="font-display text-2xl font-medium leading-relaxed text-foreground sm:text-3xl lg:text-4xl">
                 {`"${testimonials[current].quote}"`}
               </p>
               <div className="mt-8">
-                <p className="text-sm font-bold text-foreground">
-                  {testimonials[current].author}
-                </p>
-                <p className="mt-1 text-xs text-muted-foreground">
-                  {testimonials[current].role}
-                </p>
+                <p className="text-sm font-bold text-foreground">{testimonials[current].author}</p>
+                <p className="mt-1 text-xs text-muted-foreground">{testimonials[current].role}</p>
               </div>
             </motion.div>
           </AnimatePresence>
@@ -80,8 +74,7 @@ export default function Testimonials() {
             type="button"
             onClick={prev}
             className="flex h-10 w-10 items-center justify-center rounded-full border border-border/40 text-muted-foreground transition-all duration-300 hover:border-versayn-green/40 hover:text-foreground"
-            aria-label="Previous testimonial"
-          >
+            aria-label="Previous testimonial">
             <ChevronLeft className="h-4 w-4" />
           </button>
           <div className="flex gap-2">
@@ -90,10 +83,9 @@ export default function Testimonials() {
                 key={i}
                 type="button"
                 onClick={() => setCurrent(i)}
-                className={`h-2 rounded-full transition-all duration-300 ${i === current
-                    ? "w-8 bg-versayn-green"
-                    : "w-2 bg-muted-foreground/30"
-                  }`}
+                className={`h-2 rounded-full transition-all duration-300 ${
+                  i === current ? 'w-8 bg-versayn-green' : 'w-2 bg-muted-foreground/30'
+                }`}
                 aria-label={`Go to testimonial ${i + 1}`}
               />
             ))}
@@ -102,12 +94,11 @@ export default function Testimonials() {
             type="button"
             onClick={next}
             className="flex h-10 w-10 items-center justify-center rounded-full border border-border/40 text-muted-foreground transition-all duration-300 hover:border-versayn-green/40 hover:text-foreground"
-            aria-label="Next testimonial"
-          >
+            aria-label="Next testimonial">
             <ChevronRight className="h-4 w-4" />
           </button>
         </div>
       </div>
     </section>
-  )
+  );
 }

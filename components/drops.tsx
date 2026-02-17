@@ -162,37 +162,43 @@ export default function Drops() {
       image: '/poligrafiya/buklet.jpg',
       label: null,
       category: 'polygraphy',
-    }, {
+    },
+    {
       title: t('products.doorhanger.title'),
       spec: t('products.doorhanger.spec'),
       image: '/poligrafiya/doorhanger.png',
       label: null,
       category: 'polygraphy',
-    }, {
+    },
+    {
       title: t('products.file.title'),
       spec: t('products.file.spec'),
       image: '/poligrafiya/fayl.jpg',
       label: null,
       category: 'polygraphy',
-    }, {
+    },
+    {
       title: t('products.calendar.title'),
       spec: t('products.calendar.spec'),
       image: '/poligrafiya/kalendar.jpg',
       label: null,
       category: 'polygraphy',
-    }, {
+    },
+    {
       title: t('products.leaflet.title'),
       spec: t('products.leaflet.spec'),
       image: '/poligrafiya/liflet.jpg',
       label: null,
       category: 'polygraphy',
-    }, {
+    },
+    {
       title: t('products.polyMenu.title'),
       spec: t('products.polyMenu.spec'),
       image: '/poligrafiya/menu.jpg',
       label: null,
       category: 'polygraphy',
-    }, {
+    },
+    {
       title: t('products.bag.title'),
       spec: t('products.bag.spec'),
       image: '/poligrafiya/paket.jpg',
@@ -201,7 +207,9 @@ export default function Drops() {
     },
   ];
 
-  const filtered: Product[] = activeTab ? products.filter((p) => p.category === activeTab) : products;
+  const filtered: Product[] = activeTab
+    ? products.filter((p) => p.category === activeTab)
+    : products;
 
   const handleOpenModal = (productTitle: string) => {
     setSelectedProduct(productTitle);
@@ -209,7 +217,7 @@ export default function Drops() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-versayn-dark py-5 lg:py-40">
+    <section id="services" className="relative overflow-hidden bg-versayn-dark py-5 lg:py-40">
       {/* Marquee */}
       <div className="pointer-events-none absolute top-1/2 -translate-y-1/2 w-full overflow-hidden opacity-[0.03]">
         <div className="animate-marquee flex whitespace-nowrap">
@@ -254,10 +262,11 @@ export default function Drops() {
               key={tab}
               type="button"
               onClick={() => setActiveTab(tab)}
-              className={`rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${activeTab === tab
-                ? 'border-versayn-green bg-versayn-green text-versayn-dark'
-                : 'border-border/40 text-muted-foreground hover:border-versayn-green/40 hover:text-foreground'
-                }`}>
+              className={`rounded-full border px-5 py-2 text-xs font-semibold uppercase tracking-wider transition-all duration-300 ${
+                activeTab === tab
+                  ? 'border-versayn-green bg-versayn-green text-versayn-dark'
+                  : 'border-border/40 text-muted-foreground hover:border-versayn-green/40 hover:text-foreground'
+              }`}>
               {t(`tabs.${tab}`)}
             </button>
           ))}
