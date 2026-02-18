@@ -85,7 +85,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
     },
 
     icons: {
-      icon: '/favicon.ico',
+      icon: '/favicon.png',
       apple: '/apple-touch-icon.png',
     },
   };
